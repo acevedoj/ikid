@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pun-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAj-WG-Bqx">
+                                <rect key="frame" x="366" y="657" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UAd-bj-R19"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Why did the cookie cry?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="73" y="338" width="268" height="31.333333333333314"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="Br7-ca-6of"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="SAj-WG-Bqx" secondAttribute="trailing" constant="16" id="McU-VZ-EsZ"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerY" secondItem="PQr-Ze-W5v" secondAttribute="centerY" id="TBO-Gg-P6K"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="SAj-WG-Bqx" secondAttribute="bottom" id="b9i-ZS-rJs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="goodJoke" destination="KQZ-1w-vlD" id="JLS-mr-noc"/>
+                        <outlet property="viewController" destination="tsR-hK-woN" id="PBP-nU-OGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781.60000000000002" y="-367.46626686656674"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="aiD-fk-PQY">
+            <objects>
+                <viewController id="TW4-JG-skU" customClass="ThirdViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fxA-Nw-Lze">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-LM-Duh">
+                                <rect key="frame" x="366" y="657" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="TW4-JG-skU" eventType="touchUpInside" id="jgh-rj-Aj8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Where do robots go for fun?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wsz-MI-3Oc">
+                                <rect key="frame" x="51.666666666666657" y="338" width="311" height="31.333333333333314"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mQp-Nw-JBq" firstAttribute="trailing" secondItem="lmz-LM-Duh" secondAttribute="trailing" constant="16" id="1qy-hX-uLa"/>
+                            <constraint firstItem="Wsz-MI-3Oc" firstAttribute="centerY" secondItem="mQp-Nw-JBq" secondAttribute="centerY" id="CUu-ue-CwS"/>
+                            <constraint firstItem="mQp-Nw-JBq" firstAttribute="bottom" secondItem="lmz-LM-Duh" secondAttribute="bottom" id="TPS-eC-m7b"/>
+                            <constraint firstItem="Wsz-MI-3Oc" firstAttribute="centerX" secondItem="mQp-Nw-JBq" secondAttribute="centerX" id="lzZ-U3-KHW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mQp-Nw-JBq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="first" id="qj2-c8-xZE"/>
+                    <connections>
+                        <outlet property="jokeLabel3" destination="Wsz-MI-3Oc" id="6n4-kl-4Au"/>
+                        <outlet property="thirdViewController" destination="fxA-Nw-Lze" id="sHE-Uo-8zU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRf-8n-8el" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585.5072463768117" y="0.0"/>
+        </scene>
+        <!--Code-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDV-cG-JiN">
+                                <rect key="frame" x="366" y="657" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="flipJoke:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3Iq-im-f4e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's a joke about nil" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-rw-US0">
+                                <rect key="frame" x="85" y="352.66666666666669" width="244" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="uDV-cG-JiN" secondAttribute="trailing" constant="16" id="QL1-c8-FXh"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="uDV-cG-JiN" secondAttribute="bottom" id="Tv8-t2-Wei"/>
+                            <constraint firstItem="s0C-rw-US0" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="awY-QM-rGk"/>
+                            <constraint firstItem="s0C-rw-US0" firstAttribute="centerY" secondItem="O1u-W8-tvY" secondAttribute="centerY" constant="14.5" id="zvS-Mw-foz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Code" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="jokeLabel2" destination="s0C-rw-US0" id="ZLQ-Ce-wIe"/>
+                        <outlet property="secondViewController" destination="QS5-Rx-YEW" id="M5R-e1-rhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="372"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="TW4-JG-skU" kind="relationship" relationship="viewControllers" id="v15-7n-3uy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
